@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Envy Code R';
+  src: url("../font/Envy Code R.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  color: #BFBFBF;
+  background-color: #121212;
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Envy Code R', 'monospace';
+  color: #D1B38A;
+  font-size: 13pt; }
+
+nav {
+  background-color: #333333;
+  font-family: 'Envy Code R', 'monospace';
+  height: 22px; }
+
+.navbar .nav-item {
+  text-align: center; }

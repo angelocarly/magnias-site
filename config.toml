@@ -1,0 +1,25 @@
+languageCode = "en-us"
+relativeURLs = true
+sectionPagesMenu = "main"
+
+theme = "mag"
+
+[menu]
+    [[menu.main]]
+        identifier = "whois"
+        name = "Whois"
+        url = "/whois/"
+        weight = 100
+
+    [[menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
+        weight = 110
+
+
+
+[params]
+	description = "Personal site and blog"
+	baseURL = "https://magnias.be/"
+	title = "Angelo Carly"
