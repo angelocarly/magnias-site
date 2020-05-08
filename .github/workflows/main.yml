@@ -28,7 +28,7 @@ jobs:
         extended: true
     
     - name: Build site
-      run: hugo --minify
+      run: hugo -D --minify
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.2
