@@ -5,6 +5,7 @@ $background2: #333333;
 $background3: #1F1F1F;
 $accent1: #D1B38A;
 $accent2: #E1AA5D;
+$accent3: #FF9600;
 
 @font-face {
 	font-family: 'Envy Code R';
@@ -28,6 +29,20 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 1.4em;
+}
+
+a:link, a:visited, a:active {
+	color: $accent2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $accent3;
+	text-decoration: none;
+}
+
+.caption {
+	font-family: 'Envy Code R', 'monospace';
 }
 
 nav {
