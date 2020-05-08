@@ -2,6 +2,7 @@ $base-color: #BFBFBF;
 $base-color-alt: #808080;
 $background1: #121212;
 $background2: #333333;
+$background3: #1F1F1F;
 $accent1: #D1B38A;
 $accent2: #E1AA5D;
 
@@ -22,7 +23,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Envy Code R', 'monospace';
   	color: $accent1;
-	font-size: 13pt;
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 1.4em;
 }
 
 nav {
@@ -35,11 +40,14 @@ nav {
 	text-align: center;
 }
 
-//.container {
-//	color: $base-color;
-//	background-color: $background1;
-//	border: 5px solid $background2;
-//	border-radius: 0px;
-//	padding: 3px;
-//}
+.bord {
+	color: $base-color;
+	border: 5px solid $background3;
+	border-radius: 0;
+	padding: 5px;
+  	margin-top: 5px;
+}
 
+img {
+	border: 3px solid #262626;
+}

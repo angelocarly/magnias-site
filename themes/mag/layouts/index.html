@@ -1,10 +1,16 @@
 {{ define "main" }}
-<div class="container" style="width: 70%">
+<div class="container bord" style="width: 70%">
     <!--    <h1>{{ .Title | markdownify}}</h1>-->
+    <div class="row">
+        <div class="col-md-10">
+            {{ .Content }}
+        </div>
 
-    {{ .Content }}
-    <aside style="width: 20%; float: right">
-        <img src="{{ .Params.ImgSrc }}" class="img-fluid float-right profilepic"/>
-    </aside>
+        <div class="col-md-2">
+            <img src="{{ .Params.ImgSrc }}" class="profilepic" style="float: right; width: 100px;"/>
+        </div>
+    </div>
+
+
 </div>
 {{ end }}
