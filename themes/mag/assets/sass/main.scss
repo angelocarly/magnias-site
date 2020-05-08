@@ -9,88 +9,96 @@ $accent2: #E1AA5D;
 $accent3: #FF9600;
 
 @font-face {
-	font-family: 'Envy Code R';
-	src: url("../font/Envy Code R.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Envy Code R';
+  src: url("../font/Envy Code R.ttf") format("truetype");
+  font-weight: normal;
+  font-size: 10pt;
+  font-style: normal;
 }
 
 body {
-	color: $base-color;
-	background-color: $background1;
-	font-family: 'Arial', 'Helvetica', 'sans-serif';
-	font-size: 13px;
+  color: $base-color;
+  background-color: $background1;
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+  //font-size: 13px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Envy Code R', 'monospace';
-  	//color: $base-color-alt;
-	font-size: 1.2em;
+  font-family: 'Envy Code R', 'monospace';
+  //font-weight: normal;
+  //font-size: 1em;
+  //color: $base-color-alt;
+  font-size: 14pt;
 }
 
 .grey {
-	color: $base-color-alt;
+  color: $base-color-alt;
 }
 
 .light-orange {
-	color: $accent1;
+  color: $accent1;
 }
 
 a:link, a:visited, a:active {
-	color: $accent2;
-	text-decoration: none;
+  color: $accent2;
+  text-decoration: none;
 }
 
 a:hover {
-	color: $accent3;
-	text-decoration: none;
+  color: $accent3;
+  text-decoration: none;
 }
 
 .caption {
-	font-family: 'Envy Code R', 'monospace';
+  font-family: 'Envy Code R', 'monospace';
 }
 
 nav {
-	background-color: $background2;
-	font-family: 'Envy Code R', 'monospace';
-	height: 22px;
+  background-color: $background2;
+  font-family: 'Envy Code R', 'monospace';
+  height: 22px;
+  font-size: 10pt;
 }
 
-.navbar .nav-item {
-	text-align: center;
+.navbar .nav-item .nav-link {
+  text-align: center;
 }
 
 div.item {
-	background-color: $background1;
-	color: $base-color;
-	border: 5px solid $background3;
-	border-radius: 0;
-  	margin-top: 5px;
-  	padding: 0;
+  background-color: $background1;
+  color: $base-color;
+  border: 5px solid $background3;
+  border-radius: 0;
+  margin-top: 5px;
+  padding: 0;
 }
 
-div.big-header {
-	font-family: 'Envy Code R', 'monospace';
-	background-color: $background4;
-  	border-bottom: 1px solid $background3;
-	margin: 0;
-	padding: 0;
+div.header {
+  font-family: 'Envy Code R', 'monospace';
+  background-color: $background4;
+  border-bottom: 1px solid $background3;
+  margin: 0;
+  padding: 0;
+  //font-size: 50px;
 }
 
 // Fix margin that enlarges header
-.big-header h1 {
-	margin-bottom: 0;
+.header h1 {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 10pt;
 }
 
 p {
-	padding-left: 5px;
-	padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 img {
-	border: 3px solid #262626;
+  border: 3px solid #262626;
 }
 
 #index h1, h2 {
-	color: $accent1;
+  color: $accent1;
+  font-size: 15pt;
 }

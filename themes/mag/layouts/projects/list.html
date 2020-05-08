@@ -5,7 +5,7 @@
     </h1>
     {{ range .Pages }}
     <div class="row mt-2">
-        <div class="d-none d-sm-block col-sm-2 mt-auto offset-sm-2 text-right bord caption">
+        <div class="mx-auto d-sm-block col-sm-2 mt-auto offset-sm-2 sm-text-center text-right bord caption">
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>
             <a href="{{.Permalink}}">{{.Title}}</a>
         </div>
