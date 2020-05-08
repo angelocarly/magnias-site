@@ -5,7 +5,7 @@ draft: true
 imgsrc: "/img/pf.jpg"
 ---
 
-# Hey, I'm Angelo
+# Hi, I'm Angelo
 I'm a young-graduate with a passion for cybersecurity and low-level coding.
 
 
@@ -13,7 +13,7 @@ I'm a young-graduate with a passion for cybersecurity and low-level coding.
 ## Languages
 Java, Python, Javascript, C++, Rust
 
-## Hobies
+## Hobbies
 Bouldering, Guitar, Tinkering with Linux and cats
 
 ## Music you should check out
