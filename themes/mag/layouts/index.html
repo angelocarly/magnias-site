@@ -1,7 +1,15 @@
 {{ define "main" }}
-<div id="index" class="container item" style="width: 70%">
-    <!--    <h1>{{ .Title | markdownify}}</h1>-->
-    <div class="row">
+<div class="container item">
+    <div class="header">
+        <h1>
+            <time class="grey" datetime="{{ .Date.Format ` 2006-01-02T15:04:05Z07:00` | safeHTML }}">
+                {{ .Date.Format `Jan 2, 2006` }}
+            </time>
+            <span class="light-orange">{{ .Title | markdownify}}</span>
+        </h1>
+    </div>
+
+    <div id="index" class="row">
         <div class="col-md-10">
             {{ .Content }}
         </div>
@@ -10,7 +18,5 @@
             <img src="{{ .Params.ImgSrc }}" class="profilepic" style="float: right; width: 100px;"/>
         </div>
     </div>
-
-
 </div>
 {{ end }}

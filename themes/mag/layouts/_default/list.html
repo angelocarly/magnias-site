@@ -1,16 +1,19 @@
 {{ define "main" }}
 <div class="container">
-    <h1 class="text-center">
-        {{ .Type | humanize }}
-    </h1>
-    {{ range .Pages }}
-    <div class="row mt-2">
-        <div class="d-none d-sm-block col-sm-2 mt-auto offset-sm-2 text-right">
-            <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <div class="row justify-content-center">
+        {{ range .Pages }}
+        <div class="item col- col-md-5" onclick="location.href='{{.Permalink}}'" style="cursor: pointer;">
+            <div class="header">
+                <h1>
+                    <time class="grey" datetime="{{ .Date.Format ` 2006-01-02T15:04:05Z07:00` | safeHTML }}">
+                        {{ .Date.Format "Jan 2, 2006" }}
+                    </time>
+                    <a href="{{.Permalink}}">{{.Title}}</a>
+                </h1>
+            </div>
+            {{ .Description | markdownify }}
         </div>
-        <div class="col">
-        </div>
+        {{ end }}
     </div>
-    {{ end }}
 </div>
 {{ end }}

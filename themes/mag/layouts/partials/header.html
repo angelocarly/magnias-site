@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand navbar-dark">
-    <div class="navbar-nav mx-auto">
+<nav class="navbar navbar-expand">
+    <div class="navbar-nav mx-auto" id="nav">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="navbar-item {{ if or ($currentPage.IsMenuCurrent `main` .) ($currentPage.HasMenuCurrent `main` .) }} active {{end}}">
