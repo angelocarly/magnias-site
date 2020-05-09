@@ -14,3 +14,5 @@ rendering techniques and OpenGL was thrilling enough to keep building on it.
 
 The goal was to create a little voxel engine (like minecraft), but with physics and decent graphics in it.
 ![worldimage](/img/xyzengine/world.png)
+![worldimage](/img/xyzengine/world_wire.png)
+![worldimage](/img/xyzengine/physics.png)
