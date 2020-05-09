@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row justify-content-center">
         {{ range .Pages }}
-        <div class="item col- col-md-5" onclick="location.href='{{.Permalink}}'" style="cursor: pointer;">
+        <div class="item col- col-md-5" onclick="location.href='{{.Permalink}}'" style="cursor: pointer; margin: 0 5px 5px 0;">
             <div class="header">
                 <h1>
                     <time class="grey" datetime="{{ .Date.Format ` 2006-01-02T15:04:05Z07:00` | safeHTML }}">

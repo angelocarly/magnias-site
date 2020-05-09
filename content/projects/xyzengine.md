@@ -8,11 +8,11 @@ description: "A voxel engine written in Java using the LibGDX game development l
 
 A game engine written in Java using the [LibGDX](https://libgdx.badlogicgames.com) game development library.
 
-During my first year studying IT in college, I spent my extra time in the Java Programming lessens developing
+During my first year studying IT in college, I spent my extra time in the Java Programming lessons developing
 a little game engine in Java. It wasn't going to get used for anything special, but just learning about different
 rendering techniques and OpenGL was thrilling enough to keep building on it.
 
-The goal was to create a little voxel engine (like minecraft), but with physics and decent graphics in it.
+The goal was to create a little voxel engine (like minecraft), but with physics and lighting elements in it.
 ![worldimage](/img/xyzengine/world.png)
 ![worldimage](/img/xyzengine/world_wire.png)
 ![worldimage](/img/xyzengine/physics.png)
