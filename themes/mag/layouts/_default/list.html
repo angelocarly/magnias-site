@@ -11,7 +11,9 @@
                     <a href="{{.Permalink}}">{{.Title}}</a>
                 </h1>
             </div>
-            {{ .Description | markdownify }}
+            <div class="content">
+                {{ .Description | markdownify }}
+            </div>
         </div>
         {{ end }}
     </div>

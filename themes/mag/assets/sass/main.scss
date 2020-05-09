@@ -24,11 +24,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Envy Code R', 'monospace';
-  //font-weight: normal;
-  //font-size: 1em;
-  //color: $base-color-alt;
-  font-size: 14pt;
+  //font-family: 'Envy Code R', 'monospace';
+  font-weight: bold;
+  color: $accent1;
+  font-size: 12px;
 }
 
 .grey {
@@ -98,8 +97,15 @@ div.header {
   background-color: $background4;
   border-bottom: 1px solid $background3;
   margin: 0;
-  padding: 0;
+  padding: 2px 5px 2px 5px;
   //font-size: 50px;
+}
+
+div.content {
+  overflow: hidden;
+  margin-top: 3px;
+  padding: 0 5px 0 5px;
+  position: relative;
 }
 
 // Fix margin that enlarges header
@@ -109,19 +115,14 @@ div.header {
   font-size: 10pt;
 }
 
-p {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-img {
+.content img {
   border: 3px solid #262626;
   max-width: 98%;
-  margin: 4px;
+  margin: 0 5px 5px 0;
   display: block;
 }
 
-#index h1, h2 {
-  color: $accent1;
-  font-size: 15pt;
-}
+//#index h1, h2 {
+//  color: $accent1;
+//  font-size: 15pt;
+//}
