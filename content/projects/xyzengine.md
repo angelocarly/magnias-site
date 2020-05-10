@@ -1,7 +1,7 @@
 ---
 title: "Xyzengine"
 date: 2020-05-08T14:59:05+02:00
-draft: true
+draft: false
 description: "A voxel engine written in Java using the LibGDX game development library."
 preview: "/img/xyzengine/world.png"
 ---

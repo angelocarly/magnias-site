@@ -1,7 +1,7 @@
 ---
 title: "Signald Tui"
 date: 2020-05-09T02:28:48+02:00
-draft: true
+draft: false
 description: "A Signal client with a terminal interface written in Rust."
 preview: "/img/signal/chat.png"
 ---
@@ -17,5 +17,8 @@ You can also navigate between panes using the alt key and vim bindings.
 
 I learned a lot of Rust concepts from watching other similar projects, definitely check out [spotify-tui](https://github.com/Rigellute/spotify-tui)!
 
+You can find my code on [Github](https://github.com/angelocarly/signald-tui)
+
 ![signald-tui](/img/signal/chat.png)
-[Github](https://github.com/angelocarly/signald-tui)
+
+![signal-app](/img/signal/app.png)
