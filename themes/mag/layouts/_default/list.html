@@ -14,7 +14,7 @@
             <div class="content">
                 {{ .Description | markdownify }}
                 {{ if isset .Params "preview" }}
-                <img src="{{ .Params.Preview }}">
+                <img class="preview" src="{{ .Params.Preview }}">
                 {{ end }}
             </div>
         </div>
