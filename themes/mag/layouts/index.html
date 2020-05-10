@@ -9,14 +9,9 @@
         </h1>
     </div>
 
-    <div class="row content">
-        <div class="col-md-10">
-            {{ .Content }}
-        </div>
-
-        <div class="col-md-2">
-            <img src="{{ .Params.ImgSrc }}" class="profilepic" style="float: right; width: 100px;"/>
-        </div>
+    <div class="content">
+        <img src="{{ .Params.ImgSrc }}" class="" style="float: right; width: 100px;"/>
+        {{ .Content }}
     </div>
 </div>
 {{ end }}
