@@ -1,17 +1,42 @@
 {{ define "main" }}
-<div class="container item">
-    <div class="header">
-        <h1>
-            <time class="grey" datetime="{{ .Date.Format ` 2006-01-02T15:04:05Z07:00` | safeHTML }}">
-                {{ .Date.Format `Jan 2, 2006` }}
-            </time>
-            <span class="light-orange">{{ .Title | markdownify}}</span>
-        </h1>
+<div class="container justify-content-center">
+    <div class="">
+        <div class="item">
+            <div class="header">
+                <h1>
+                    <time class="grey" datetime="{{ .Date.Format ` 2006-01-02T15:04:05Z07:00` | safeHTML }}">
+                        {{ .Date.Format `Jan 2, 2006` }}
+                    </time>
+                    <span class="light-orange">{{ .Title | markdownify}}</span>
+                </h1>
+            </div>
+
+            <div class="content">
+                <img src="{{ .Params.ImgSrc }}" class="" style="float: right; max-width: 100px;"/>
+                {{ .Content }}
+            </div>
+        </div>
     </div>
 
-    <div class="content">
-        <img src="{{ .Params.ImgSrc }}" class="" style="float: right; width: 100px;"/>
-        {{ .Content }}
+    <div class="row justify-content-center" style="padding-top: 10px; padding-left: 15px; padding-right: 15px">
+        {{ with .Site.GetPage "/projects" }}
+        {{ range .Pages }}
+        <div class="col-md-6" style="padding: 0;" >
+            <div class="item" onclick="location.href='{{.Permalink}}'" style="cursor: pointer; height: 100%">
+                <div class="header">
+                    {{ .Title }}
+                </div>
+                <div class="content">
+                    {{ .Description | markdownify }}
+                    {{ if isset .Params "preview" }}
+                    <img class="preview" src="{{ .Params.Preview }}">
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
     </div>
+
 </div>
 {{ end }}
