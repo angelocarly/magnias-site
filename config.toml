@@ -10,13 +10,19 @@ theme = "mag"
         identifier = "whois"
         name = "Whois"
         url = "/"
-        weight = 100
+        weight = 1
 
     [[menu.main]]
         identifier = "projects"
         name = "Projects"
         url = "/projects/"
-        weight = 110
+        weight = 2
+
+     [[menu.main]]
+        identifier = "cv"
+        name = "CV"
+        url = "https://raw.githubusercontent.com/angelocarly/CV/master/cv.pdf"
+        weight = 3
 
 
 

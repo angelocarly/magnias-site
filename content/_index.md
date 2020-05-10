@@ -5,8 +5,8 @@ draft: true
 imgsrc: "/img/pf.jpg"
 ---
 
-# Hi, I'm Angelo
-I'm a young-graduate with a passion for cybersecurity and low-level coding.
+# Hi, I'm Angelo - Programmer & Cybersecurity student
+I'm a young-graduate with a passion for open-source, linux, cybersecurity and low-level development.
 
 
 

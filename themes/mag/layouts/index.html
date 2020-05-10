@@ -12,13 +12,19 @@
             </div>
 
             <div class="content">
-                <img src="{{ .Params.ImgSrc }}" class="" style="float: right; max-width: 100px;"/>
+                <div class="sidepanel justify-content-center" style="float: right; max-width: 100px;">
+                    <img src="{{ .Params.ImgSrc }}" class="" />
+                    <ul style="padding-inline-start: 10px">
+                        <a href="https://github.com/angelocarly">Github</a>
+                        <a href="https://www.linkedin.com/in/angelo-carly-63a244162/">LinkedIn</a>
+                    </ul>
+                </div>
                 {{ .Content }}
             </div>
         </div>
     </div>
 
-    <div class="row justify-content-center" style="padding-top: 10px; padding-left: 15px; padding-right: 15px">
+    <div class="row justify-content-center" style="padding-top: 15px; padding-left: 15px; padding-right: 15px">
         {{ with .Site.GetPage "/projects" }}
         {{ range .Pages }}
         <div class="col-md-6" style="padding: 0;" >
