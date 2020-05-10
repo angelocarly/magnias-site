@@ -2,8 +2,8 @@
 title: "Xyzengine"
 date: 2020-05-08T14:59:05+02:00
 draft: true
-description: "A voxel engine written in Java using the LibGDX game development library.
-![worldimage](/img/xyzengine/world.png)"
+description: "A voxel engine written in Java using the LibGDX game development library."
+preview: "/img/xyzengine/world.png"
 ---
 
 A game engine written in Java using the [LibGDX](https://libgdx.badlogicgames.com) game development library.
