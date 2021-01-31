@@ -3,7 +3,7 @@ relativeURLs = false
 sectionPagesMenu = "main"
 
 title = "Angelo Carly"
-theme = "mag"
+theme = "terminal"
 
 [menu]
     [[menu.main]]
@@ -27,6 +27,37 @@ theme = "mag"
 
 
 [params]
-	title = "Angelo Carly"
-	description = "Personal site and blog"
-	baseURL = "https://magnias.be/"
+  title = "Angelo Carly"
+  description = "Personal site and blog"
+  baseURL = "https://magnias.dev"
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "orange"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = false
+
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
