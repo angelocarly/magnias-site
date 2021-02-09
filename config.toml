@@ -6,27 +6,6 @@ baseURL = "/"
 title = "Angelo Carly"
 theme = "hello-friend"
 
-[menu]
-    [[menu.main]]
-        identifier = "whois"
-        name = "Whois"
-        url = "/"
-        weight = 1
-
-    [[menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/projects/"
-        weight = 2
-
-     [[menu.main]]
-        identifier = "cv"
-        name = "CV"
-        url = "https://raw.githubusercontent.com/angelocarly/CV/master/cv.pdf"
-        weight = 3
-
-
-
 [params]
   title = "Angelo Carly"
   description = "Personal site and blog"
@@ -82,9 +61,11 @@ theme = "hello-friend"
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
-        name = "About"
+        name = "Whois"
         url = "/"
+		weight = 2
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
+		weight = 3
