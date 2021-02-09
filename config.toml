@@ -1,5 +1,5 @@
 languageCode = "en-us"
-#relativeURLs = true
+relativeURLs = false
 sectionPagesMenu = "main"
 
 title = "Angelo Carly"
