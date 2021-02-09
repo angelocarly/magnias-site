@@ -1,5 +1,5 @@
 languageCode = "en-us"
-relativeURLs = false
+relativeURLs = true
 sectionPagesMenu = "main"
 
 title = "Angelo Carly"
@@ -29,7 +29,7 @@ theme = "hello-friend"
 [params]
   title = "Angelo Carly"
   description = "Personal site and blog"
-  baseURL = "https://magnias.dev"
+  baseURL = "https://magnias.dev/"
 
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
