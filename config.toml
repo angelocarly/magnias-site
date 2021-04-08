@@ -19,7 +19,7 @@ theme = "hello-friend"
   defaultTheme = "dark"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # Show reading time in minutes for posts
   showReadingTime = false

@@ -2,7 +2,7 @@
 title: "Signald Tui"
 date: 2020-03-09T02:28:48+02:00
 description: "A Signal client with a terminal interface written in Rust."
-preview: "/img/signal/chat.png"
+cover: "/img/signal/chat.png"
 ---
 
 This program is a terminal client that interfaces with [signald](https://gitlab.com/thefinn93/signald) to communicate
