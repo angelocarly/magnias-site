@@ -5,6 +5,7 @@ baseURL = "/"
 
 title = "Angelo Carly"
 theme = "hello-friend"
+disqusShortname = "angelocarly"
 
 [params]
   title = "Angelo Carly"
