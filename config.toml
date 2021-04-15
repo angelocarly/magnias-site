@@ -8,7 +8,7 @@ theme = "hello-friend"
 disqusShortname = "angelocarly"
 
 [params]
-  title = "Angelo Carly"
+  title = "Magnias"
   description = "Personal site and blog"
   baseURL = "https://magnias.dev/"
 
