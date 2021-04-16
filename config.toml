@@ -5,12 +5,14 @@ baseURL = "https://magnias.dev"
 
 title = "Angelo Carly"
 theme = "hello-friend"
-disqusShortname = "angelocarly"
+disqusShortname = "magnias-dev"
 
 [params]
   title = "Magnias"
   description = "Personal site and blog"
   baseURL = "https://magnias.dev/"
+  fullWidthTheme = false
+  centerTheme = true
 
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
