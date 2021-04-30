@@ -17,13 +17,14 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+{{ $src := .Get "src" }}
+{{ $lqipsrc := .Get "lqipsrc" }}
+{{ $caption := .Get "caption" }}
+{{ $link := .Get "link" }}
+{{ $linktarget := .Get "linktarget" }}
+{{ $attr := .Get "attr" }}
+{{ $attrlink := .Get "attrlink" }}
+{{ $alt := .Get "alt" }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" }}
+{{ partial "components/figure.html" (dict "src" $src "lqipsrc" $lqipsrc "caption" $caption "link" $link "linktarget" $linktarget "attr" $attr "attrlink" $attrlink "alt" $alt "title" $title "class" $class) }}

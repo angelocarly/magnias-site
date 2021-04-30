@@ -17,13 +17,18 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $body := .Get "text" | default .Inner }}
+{{ $class := .Get "class" }}
+{{ $citelink := .Get "citelink" }}
+{{ $cite := .Get "cite" }}
+<blockquote{{ with $class }} class="{{ . }}"{{ end }}{{ with $citelink }} cite="{{ . }}"{{ end }}>
+<p>{{- $body | plainify -}}</p>
+  {{ if $citelink }}
+    <cite>{{ partial "components/external.html" (dict "href" $citelink "body" $cite) }}</cite>
+  {{ else if $cite }}
+    <cite>{{ $cite }}</cite>
+  {{ else }}
+    <cite>N.N.</cite>
+  {{ end }}
+</blockquote>

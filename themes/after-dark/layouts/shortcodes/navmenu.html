@@ -17,13 +17,23 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+<!-- {{/*
+Attributes: name [default: "main"]
+
+Display main navigation menu:
+{{< navmenu >}}
+
+Display custom navigation menu:
+{{< navmenu "sidebar" >}}
+
+*/}} -->
+
+{{ $name := .Get 0 | default "main" }}
+{{ $entries := index .Site.Menus $name }}
+{{ $page := .Page.Page }}
+{{ with $.Site.Params.layout.menu }}
+  {{ $settings := index . $name | default dict }}
+  {{ partial "components/navmenu.html" (dict "name" $name "entries" $entries "settings" $settings "page" $page)}}
+{{ else }}
+  {{ partial "components/navmenu.html" (dict "name" $name "entries" $entries "settings" dict "page" $page)}}
+{{ end }}

@@ -17,13 +17,16 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+{{/*
+  Hack to allow generic site image for Nodes until supported
+  by the Hugo internal opengraph template.
+*/}}
+{{ if and (.IsNode) (.Site.Params.images) }}
+  <meta property="og:image" content="{{ index .Site.Params.images 0 }}">
+{{ end }}
+{{/*
+  If specified, fallback to site image if not overriden at Page level
+*/}}
+{{ if and (.IsPage) (not .Params.images) (.Site.Params.images) }}
+  <meta property="og:image" content="{{ index .Site.Params.images 0 }}">
+{{ end }}

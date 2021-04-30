@@ -17,13 +17,14 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+{{ if not (eq .settings.hidden true) }}
+  <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <meta itemprop="name" content="{{ .name | humanize }} Menu">
+    {{ range .entries }}
+      {{ $is_active := or ($.page.IsMenuCurrent $.name .) ($.page.HasMenuCurrent $.name .) }}
+      {{ if (not (in $.settings.exclude .Identifier)) }}
+        <a itemprop="url"{{ if $is_active }} class="active"{{ end }}{{ if eq .Identifier "search" }} rel="search"{{ end }} href="{{ .URL }}">{{ if .Pre }}{{ .Pre | safeHTML }} {{ end }}{{ .Name }}{{ if .Post }} {{ .Post | safeHTML }}{{ end }}</a>
+      {{ end }}
+    {{ end }}
+  </nav>
+{{ end }}

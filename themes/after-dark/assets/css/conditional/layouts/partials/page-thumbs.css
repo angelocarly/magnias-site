@@ -17,13 +17,30 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+ul.thumbnail.grid {
+  margin: 10px -10px;
+}
+ul.thumbnail.grid li {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+ul.thumbnail.grid li h2 {
+  margin-bottom: 1rem;
+}
+ul.thumbnail.grid li a:hover figure {
+  filter: brightness(1.1);
+}
+ul.thumbnail.grid li a figure > img {
+  border-radius: 2px;
+}
+.hack ul.thumbnail.grid li h2::before {
+  content: initial;
+}
+.hack ul.thumbnail.grid li::after {
+  content: initial;
+}
+.standard ul.thumbnail.grid {
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+}

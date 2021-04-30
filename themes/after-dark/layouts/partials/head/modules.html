@@ -17,13 +17,19 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+{{ $defaults := .Site.Params.defaults.modules }}
+{{ $modules := .Site.Params.modules }}
+{{ if (or $modules $defaults) }}
+  {{ with $modules.fractal_forest }}
+    {{ partial "modules/fractal-forest/index.html" . }}
+  {{ end }}
+  {{ with $modules.hall_of_mirrors }}
+    {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
+  {{ end }}
+  {{ with (default $defaults.toxic_swamp $modules.toxic_swamp) }}
+    {{ partial "modules/toxic-swamp/index.html" (dict "settings" . "data" $.Site.Data) }}
+  {{ end }}
+  {{ with $modules.voyeur }}
+    {{ partial "modules/voyeur/index.html" . }}
+  {{ end }}
+{{ end }}

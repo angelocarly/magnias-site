@@ -17,13 +17,19 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */ -}}
 
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-description = "This text is displayed in search result listings."
-draft = true
-[[copyright]]
-  owner = "{{ .Site.Params.author | default .Site.Title }}"
-  date = "{{ now.Format "2006" }}"
-  license = "cc-by-nd-4.0"
-+++
+.hack header figure[itemtype*="ImageObject"] {
+  position: relative;
+}
+.hack header figure[itemtype*="ImageObject"] figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 15px;
+  font-style: oblique;
+  font-size: smaller;
+  mix-blend-mode: soft-light;
+}
+.hack header figure[itemtype*="ImageObject"] [itemprop="headline"] {
+  font-weight: bold;
+}
