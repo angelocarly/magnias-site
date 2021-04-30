@@ -18,6 +18,6 @@ I learned a lot of Rust concepts from watching other similar projects, definitel
 
 You can find my code on [Github](https://github.com/angelocarly/signald-tui)
 
-![signald-tui](/img/signal/chat.png)
+![signald-tui](images/chat.png)
 
-![signal-app](/img/signal/app.png)
+![signal-app](images/app.png)

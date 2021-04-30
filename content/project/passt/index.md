@@ -3,7 +3,7 @@ title: "Passt"
 description: "A secure OAuth2 Identity Provider, written during my internship at Realdolmen."
 draft: true
 date: 2020-05-10T02:38:14+02:00
-preview: "/img/passt/preview.jpg"
+preview: "images/preview.jpg"
 ---
 
 During my internship at Realdolmen, I was given the chance to write an OAuth2.0 Java Spring Boot Authentication manager
@@ -26,4 +26,4 @@ This project consists of 3 applications:
 - [An Angular frontend](https://github.com/angelocarly/Passt/tree/master/Passt-frontend) for the password manager.
 - [A resource server](https://github.com/angelocarly/Passt/tree/master/Passt-sp) that acts as the link between the frontend and idp.
 
-![code_flow](/img/passt/code_flow.jpg)
+![code_flow](images/code_flow.jpg)
