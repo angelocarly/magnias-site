@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <header class="content__header">
+        <h1>{{ .Title | markdownify }}</h1>
+        {{ .Content }}
+    </header>
+
+    {{ range .Pages }}
+    <article class="post">
+        <header class="post__header">
+            <h1><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+            <p class="post__meta">
+                {{ .Params.description }},
+                <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+            </p>
+        </header>
+
+        {{ with .Resources }}
+            {{ with .GetMatch "{cover.*,*.jpg,*.png,*.jpeg}" }}
+                {{ $cover := .Resize "600x" }}
+                {{ with $cover }}
+                    <img src="{{ .Permalink }}"/>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </article>
+    {{ end }}
+{{ end }}

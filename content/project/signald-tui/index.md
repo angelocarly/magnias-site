@@ -1,7 +1,7 @@
 ---
 title: "Signald Tui"
 date: 2020-03-09T02:28:48+02:00
-description: "A Signal client with a terminal interface written in Rust."
+description: "A Signal client with a terminal interface written in Rust"
 cover: "/img/signal/chat.png"
 ---
 

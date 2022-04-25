@@ -1,8 +1,8 @@
-baseURL = "https://magnias.dev"
+baseURL = "https://risotto.joeroe.io"
 theme = "risotto"
-title = "Magnias"
-author = "Angelo Carly"
-copyright = "© 2022 Angelo Carly"
+title = "risotto demo"
+author = "Joe Roe"
+copyright = "© 2021 Joe Roe"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -22,8 +22,8 @@ mode = "dark-mode"
 
 # Sidebar: about/bio
 [params.about]
-title = "Angelo Carly"
-description = "Creative coder, Math, Computer Graphics"
+title = "risotto"
+description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
 logo = "images/rice.svg"
 
 # Sidebar: social links
@@ -34,29 +34,24 @@ logo = "images/rice.svg"
 [[params.socialLinks]]
 icon = "fab fa-github"
 title = "GitHub"
-url = "https://github.com/angelocarly"
+url = "https://github.com/joeroe/risotto"
 
 [[params.socialLinks]]
 icon = "fas fa-envelope"
 title = "Email"
-url = "angelo.carly@proton.me"
+url = "mailto:example@example.com"
 
 [[params.socialLinks]]
-icon = "fab fa-linkedin-in"
-title = "linkedin"
-url = "https://www.linkedin.com/in/angelo-carly-63a244162/"
-
-[[params.socialLinks]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/dodecatonic/"
+icon = "ai ai-orcid"
+title = "ORCID"
+url = "https://orcid.org/0000-0001-2345-6789"
 
 [menu]
 
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/"
+    url = "/about/"
     weight = 10
 
 [taxonomies]
