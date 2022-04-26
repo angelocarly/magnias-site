@@ -2,7 +2,6 @@
 title: "Xyzengine"
 date: 2017-10-04T14:59:05+02:00
 description: "A voxel engine written in Java using the LibGDX game development library"
-cover: "/img/xyzengine/world.png"
 ---
 
 A game engine written in Java using the [LibGDX](https://libgdx.badlogicgames.com) game development library.
