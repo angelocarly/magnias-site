@@ -1,7 +1,7 @@
 ---
 title: "VulkanEngine"
 date: 2022-04-25T22:06:05+02:00
-description: "Downprojecting 4D to 3D and rendering it with sparse octrees"
+description: "Downprojecting 4D geometry to 3D and rendering it with sparse octrees"
 ---
 
 TODO: Add description of engine
