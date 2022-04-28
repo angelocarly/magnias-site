@@ -4,13 +4,13 @@ date: 2022-04-25T23:06:05+02:00
 description: "Generating art with symmetry and self-referencing graphs"
 ---
 
-TODO: add information about engine
-
+A tool to create generative art, based on hexagonal symmetries
 - Written in C++
 - Using Cinder framework
 - Using OpenGL
 
-You can view the source code or try this engine here on my [Github repo](https://github.com/angelocarly/cinderengine).
+More images can be found on [my instagram page](http://instagram.com/dodecatonic).
+You can view the source code on my [Github repo](https://github.com/angelocarly/cinderengine).
 
 ![](images/pillars.png)
 ![](images/big_cube.png)
