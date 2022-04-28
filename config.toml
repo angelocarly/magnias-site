@@ -39,7 +39,7 @@ url = "https://github.com/angelocarly"
 [[params.socialLinks]]
 icon = "fas fa-envelope"
 title = "Email"
-url = "angelo.carly@proton.me"
+url = "mailto:angelo.carly@proton.me"
 
 [[params.socialLinks]]
 icon = "fab fa-linkedin-in"
