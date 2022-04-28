@@ -5,6 +5,6 @@ description: ""
 ---
 # Angelo Carly
 
-Welcome on my site, sometimes I post updates on my hobby projects.
+Welcome to my portfolio, sometimes I post updates on my hobby projects.
 
 On `/posts` you find images of projects where I didn't bother to write a description. Whereas the `/projects` tab has a collection of images with more context.
