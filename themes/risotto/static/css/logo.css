@@ -11,7 +11,7 @@
 
 .page__logo-inner {
     display: block;
-    background: var(--green);
+    background: var(--bright-yellow);
     padding: 0.25rem;
 }
 
@@ -26,11 +26,11 @@ a.page__logo-inner:active {
 }
 
 .page__logo-inner:before {
-    content: "[";
+    content: "/";
     color: var(--bg);
 }
 
 .page__logo-inner:after {
-    content: "] $";
+    content: "/";
     color: var(--bg);
 }

@@ -1,6 +1,6 @@
 ---
 title: "Passt"
-description: "A secure OAuth2 Identity Provider, written during my internship at Realdolmen."
+description: "An OAuth2 Identity Provider as a security internship"
 draft: true
 date: 2020-05-10T02:38:14+02:00
 preview: "images/preview.jpg"
