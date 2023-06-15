@@ -23,7 +23,7 @@ mode = "dark-mode"
 # Sidebar: about/bio
 [params.about]
 title = "Angelo Carly"
-description = "Creative coder, Math, Computer Graphics"
+description = "Creative code, Generative art, math, Computer Graphics"
 logo = "images/rice.svg"
 
 # Sidebar: social links
