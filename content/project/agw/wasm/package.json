@@ -1,0 +1,14 @@
+{
+  "name": "AGW",
+  "version": "0.1.0",
+  "files": [
+    "AGW_bg.wasm",
+    "AGW.js",
+    "AGW.d.ts"
+  ],
+  "module": "AGW.js",
+  "types": "AGW.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

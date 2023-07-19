@@ -4,9 +4,20 @@
     </header>
     <div class="content__body">
         {{ .Content }}
+		{{ if .Params.wasm }}
+			<div id="{{ index .Params.wasm 1 }}">
+				<script type="module" class="wasm">
+					import init from "{{ index .Params.wasm 0 }}";
+					init().then(() => {
+						console.log("WASM Loaded");
+					});
+				</script>
+			</div>
+		{{ end }}
     </div>
     <footer class="content__footer"></footer>
 {{ end }}
+
 
 {{define "aside" }}
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
