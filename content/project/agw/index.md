@@ -6,3 +6,7 @@ wasm: [ ./wasm/AGW.js, agw-wasm ]
 ---
 
 My initial testing with wasm and wgpu.
+
+Press the window to focus it.
+Keybinds:
+- Space: Switch between shaders
