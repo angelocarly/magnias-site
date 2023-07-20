@@ -1,6 +1,6 @@
 /* 1rem = 16px by default */
 
-.wasm {
+.wasm > canvas {
 	width: 100%;
 	height: 100%;
 }

@@ -5,8 +5,8 @@
     <div class="content__body">
         {{ .Content }}
 		{{ if .Params.wasm }}
-			<div id="{{ index .Params.wasm 1 }}">
-				<script type="module" class="wasm">
+			<div id="{{ index .Params.wasm 1 }}" class="wasm">
+				<script type="module" >
 					import init from "{{ index .Params.wasm 0 }}";
 					init().then(() => {
 						console.log("WASM Loaded");
