@@ -8,6 +8,7 @@ Testing CPU raytracing using Rust.
 
 [Github repo](https://github.com/angelocarly/RVK)
 
+![](images/shadingnoise.jpg)
 ![](images/many_bounces.png)
 ![](images/sphere_reflect.png)
 ![](images/colored.png)
